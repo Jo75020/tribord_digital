@@ -81,7 +81,7 @@
           </div>
           <div class="bottom-body">
             <div class="card-date">
-            <%= article.user.email %> / <%= article.created_at %>
+            <%= article.user.first_name.capitalize %> / <%= article.created_at.strftime('%b %d, %Y') %>
             </div>
             <div class="card-title">
             <%= article.title %>
