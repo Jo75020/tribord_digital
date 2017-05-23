@@ -73,6 +73,7 @@
   <div class="row">
     <div class="col-xs-12">
     <h3><span>/</span>Journal</h3>
+    <% @articles.each do |article|  %>
       <div class="col-md-4">
         <div class="card">
           <div class="img-card-up">
@@ -80,20 +81,18 @@
           </div>
           <div class="bottom-body">
             <div class="card-date">
-            Léo / 24 février 2016
+            <%= article.user.email %> / <%= article.created_at %>
             </div>
             <div class="card-title">
-            Color Theory
+            <%= article.title %>
             </div>
             <div class="card-description">
-            Another article devoted to the theme of information architecture in design for web and mobile interface:
-  check the set of effective techniques for IA boosting usability.
+            <%= article.content %>
             </div>
           </div>
         </div>
       </div>
-      <div class="col-md-4"></div>
-      <div class="col-md-4"></div>
+      <% end %>
     </div>
   </div>
 </div>
