@@ -61,8 +61,7 @@
     <h3><span>/</span>L'agence</h3>
     <div class="padded-little"></div>
     <p>The future of shipping will be silent and emission free.</p>
-    <div class="padded"></div>
-    <button type="button" class="more-button-2">Plus de travaux</button>
+    <button type="button" class="more-button-2">Découvrez l'agence</button>
     </div>
   </div>
 </div>
@@ -73,11 +72,11 @@
   <div class="row">
     <div class="col-xs-12">
     <h3><span>/</span>Journal</h3>
-    <% @articles.each do |article|  %>
+    <% @articles.limit(3).each do |article|  %>
       <div class="col-md-4">
         <div class="card">
           <div class="img-card-up">
-          <%= image_tag "Paint.jpg" %>
+          <%= cl_image_tag article.photo %>
           </div>
           <div class="bottom-body">
             <div class="card-date">
@@ -94,6 +93,9 @@
       </div>
       <% end %>
     </div>
+  </div>
+  <div class="centred-button">
+  <button type="button" class="more-button-3">Plus d'articles</button>
   </div>
 </div>
 

@@ -60,6 +60,11 @@
 .more-button {
   float: right;
   margin-top: 20px;
+  background: #30384C;
+  color: white;
+  font-size: 22px;
+  border: none;
+  padding: 1.5% 3% 1.5% 3%;
 }
 
 .sentence {
@@ -96,8 +101,22 @@
 
 .more-button-2 {
   float: left;
+  margin-top: 20px;
+  background: #30384C;
+  color: white;
+  font-size: 22px;
+  border: none;
+  padding: 2% 4% 2% 4%;
 }
 
+.more-button-3 {
+  margin-top: 20px;
+  background: #30384C;
+  color: white;
+  font-size: 22px;
+  border: none;
+  padding: 1% 2% 1% 2%;
+}
 
 .our-journal h3 {
   font-weight: bolder;
@@ -110,10 +129,12 @@
   color: #ee6b5b;
 }
 
-
-
-
-
+.centred-button {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-top: 20px;
+}
 
 
 

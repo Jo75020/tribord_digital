@@ -5,3 +5,21 @@ width: 100%;
 .card {
   box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.3);
 }
+
+.card-date {
+  padding: 3% 3% 3% 6%;
+  margin-top: 10px;
+}
+
+.card-title {
+  padding: 3% 3% 3% 6%;
+  font-size: 31px;
+  color: #30384C;
+  font-weight: 900;
+}
+
+.card-description {
+  padding: 2% 6% 6% 6%;
+  font-size: 20px;
+  color: rgba(119, 119, 119, 0.85);
+}
