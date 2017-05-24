@@ -143,10 +143,32 @@
 
 }
 
+.client-wrapper-b {
+  display: flex;
+  justify-content: space-between;
+}
 
+.client-wrapper-b img {
+  width: 45%;
+}
+.img-client {
+  text-align: center;
+}
 
+.client-title h3 {
+  font-weight: bolder;
+  font-size: 55px;
+  text-transform: uppercase;
+}
 
+.client-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
 
+.client-wrapper img {
+  width: 75%;
+}
 
 
 
