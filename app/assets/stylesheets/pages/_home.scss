@@ -170,7 +170,38 @@
   width: 75%;
 }
 
+.newsletter-wrapper h3 {
+  font-size: 23px;
+  color: #ee6b5b;
+}
 
+#new_info {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#info_email {
+  border: 1px solid #30384C;
+}
+
+#new_info > div > label {
+  display: none;
+}
+
+#new_info > input.btn.btn-default {
+  color: white;
+  background-color: #30385C;
+  border: 1px solid #30384C;
+}
+
+.form-control {
+  margin-top: 10px;
+}
+
+.form-group {
+  margin-bottom: 9px;
+}
 
 @media screen and (max-width: 800px) {
 .left-word-inclined {
