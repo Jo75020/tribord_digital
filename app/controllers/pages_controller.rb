@@ -3,5 +3,7 @@ class PagesController < ApplicationController
 
   def home
     @articles = Article.all
+    @info = Info.new
   end
+
 end

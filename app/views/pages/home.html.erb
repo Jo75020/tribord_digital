@@ -143,7 +143,10 @@
     <div class="col-xs-12 col-md-4 col-md-offset-4 newsletter-wrapper">
     <h3>Inscrivez-vous à notre newsletter</h3>
     <div class="newsletter-f">
-    <input type="email"><input>
+      <%= simple_form_for @info do |f| %>
+        <%= f.input :email %>
+        <%= f.button :submit %>
+      <% end %>
     </div>
     </div>
   </div>
