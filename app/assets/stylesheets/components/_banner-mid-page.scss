@@ -1,21 +1,21 @@
-.banner {
+.banner-mid-page {
   color: white;
   text-align: center;
-  height: 90vh;
+  height: 45vh;
   /* if you have a 70px navbar => height: calc(100vh - 70px); */
   background-size: cover !important;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
   flex-direction: column;
 }
-.banner h1 {
+.banner-mid-page h1 {
   font-size: 50px;
   text-shadow: 0px 1px rgba(0, 0, 0, 0.2);
-  font-family: "Levibrush";
   letter-spacing: 10px;
+  text-align: center;
 }
-.banner p {
+.banner-mid-page p {
   font-size: 18px;
   font-weight: 400;
   color: white;
@@ -25,20 +25,20 @@
   align-items: center;
 }
 
-.banner p i {
+.banner-mid-page p i {
   margin-left: 5px;
   margin-right: 5px;
   font-size: 10px;
   color: #ee6b5b;
 }
 
-.banner-bottom {
+.banner-mid-page-bottom {
   width: 100%;
   display: flex;
   justify-content: center;
 }
 
-.banner-bottom i {
+.banner-mid-page-bottom i {
   font-size: 25px;
   border: 1px solid rgba(255, 255, 255, 0.35);
   padding: 10px;

@@ -6,4 +6,8 @@ class PagesController < ApplicationController
     @info = Info.new
   end
 
+  def agence
+    @articles = Article.all
+  end
+
 end

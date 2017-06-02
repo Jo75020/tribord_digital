@@ -1,44 +1,45 @@
-.banner {
+.banner-second {
   color: white;
   text-align: center;
   height: 90vh;
   /* if you have a 70px navbar => height: calc(100vh - 70px); */
   background-size: cover !important;
   display: flex;
-  align-items: center;
+  align-items: left;
   justify-content: center;
   flex-direction: column;
+  padding-left: 10%;
 }
-.banner h1 {
+.banner-second h1 {
   font-size: 50px;
   text-shadow: 0px 1px rgba(0, 0, 0, 0.2);
-  font-family: "Levibrush";
   letter-spacing: 10px;
+  text-align: left;
 }
-.banner p {
+.banner-second p {
   font-size: 18px;
   font-weight: 400;
   color: white;
   margin-bottom: 20px;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-start;
+  align-items: left;
 }
 
-.banner p i {
+.banner-second p i {
   margin-left: 5px;
   margin-right: 5px;
   font-size: 10px;
   color: #ee6b5b;
 }
 
-.banner-bottom {
+.banner-second-bottom {
   width: 100%;
   display: flex;
   justify-content: center;
 }
 
-.banner-bottom i {
+.banner-second-bottom i {
   font-size: 25px;
   border: 1px solid rgba(255, 255, 255, 0.35);
   padding: 10px;
