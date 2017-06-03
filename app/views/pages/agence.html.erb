@@ -77,8 +77,8 @@
   <div class="row">
   <% @data.each_with_index do |a, i| %>
   <% break if i == 6 %>
-    <div class="col-md-4 text-center">
-    <% image = a["images"]["thumbnail"]["url"] %>
+    <div class="col-md-4 text-center instagram-pic">
+    <% image = a["images"]["standard_resolution"]["url"] %>
     <%= image_tag image %>
     </div>
     <% end %>
