@@ -1,5 +1,5 @@
 class PagesController < ApplicationController
-  skip_before_action :authenticate_user!, only: [ :home, :agence ]
+  skip_before_action :authenticate_user!, only: [ :home, :agence, :works ]
 
   def home
     @articles = Article.all
@@ -14,6 +14,10 @@ class PagesController < ApplicationController
      @result = JSON.parse(i)
      @data = @result["data"]
     end
+  end
+
+  def works
+    @info = Info.new
   end
 
 end

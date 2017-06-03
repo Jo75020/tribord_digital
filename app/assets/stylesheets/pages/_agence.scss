@@ -42,6 +42,7 @@ background-image: url("donne.jpg");
 
 .card-agence p {
   padding: 5px;
+
 }
 
 .more-button-5 {
@@ -130,11 +131,13 @@ background-image: url("donne.jpg");
 .menu-img-1  {
   background-image: url("Works.jpg");
   background-size: cover !important;
+  width: 100%;
 }
 
 .menu-img-2 {
   background-image: url("Journal.jpg");
   background-size: cover !important;
+  width: 100%;
 }
 
 .card-agence-bot {
@@ -148,9 +151,10 @@ background-image: url("donne.jpg");
 }
 
 .card-agence-bot p {
-    text-align: right;
-    padding: 5px;
-    width: 100%;
+  text-align: right;
+  padding: 5px;
+  width: 100%;
+  padding-right: 15px;
 }
 
 .flexed {
