@@ -19,6 +19,7 @@ gem 'simple_form'
 gem 'autoprefixer-rails'
 gem "letter_opener", group: :development
 gem 'gibbon'
+gem 'instagram', '~> 1.1', '>= 1.1.6'
 
 gem 'activeadmin', github: 'activeadmin/activeadmin'
 gem 'inherited_resources', github: 'activeadmin/inherited_resources'
