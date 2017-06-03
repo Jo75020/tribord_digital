@@ -20,4 +20,8 @@ class PagesController < ApplicationController
     @info = Info.new
   end
 
+  def contact
+    @info=Info.new
+  end
+
 end

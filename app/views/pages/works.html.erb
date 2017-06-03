@@ -65,4 +65,49 @@
   </div>
 </div>
 
+<div class="centred-button">
+<button type="button" class="more-button-3">VOTRE DEVIS EN LIGNE</button>
+</div>
+
+<div class="padded"></div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 card-agence-bot">
+    <div class="menu-img-1">
+    <%= link_to pages_works_path do %>
+    <div style="padding-top: 10em;"></div>
+    <p>JOURNAL</p>
+    </div>
+    </div>
+    <% end %>
+    <div class="col-md-6 card-agence-bot">
+    <div class="menu-img-2">
+    <%= link_to pages_agence_path do %>
+    <div style="padding-top: 10em;"></div>
+    <p>L'AGENCE</p>
+    </div>
+    </div>
+    <% end %>
+  </div>
+</div>
+
+<div class="padded"></div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 col-md-4 col-md-offset-4 newsletter-wrapper">
+    <h3>Inscrivez-vous à notre newsletter</h3>
+    <div class="padded-little"></div>
+    <div class="newsletter-f">
+      <%= simple_form_for @info do |f| %>
+        <%= f.input :email, placeholder: 'john@doe.com', label: 'none' %>
+        <%= f.button :submit, 'Envoyer' %>
+      <% end %>
+    </div>
+    </div>
+  </div>
+</div>
+
+
 <div class="padded"></div>

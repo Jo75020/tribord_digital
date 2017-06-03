@@ -1,0 +1,40 @@
+<div class="padded" id="logo-change"></div>
+<div class="container">
+  <div class="row">
+    <div class="col-md-12 contact-form">
+        <%= simple_form_for @info do |f| %>
+        <div class="form-line">
+        <div class="form-line-1">
+        <p><span>Je suis</span><%= f.input :first_name, placeholder: 'prénom', label: 'none'%></p>
+        </div>
+        <div class="form-line-2">
+        <p><span>Je voudrais discuter d'un</span><%= f.input :project, placeholder: 'projet', label: 'none' %></p>
+        </div>
+        <div class="form-line-3">
+        <p><span>pour l'entreprise</span><%= f.input :entreprise, placeholder: "nom de l'entreprise", label: 'none' %></p>
+        </div>
+        <div class="form-line-4">
+        <p><span>Vous pouvez me joindre sur le mail</span><%= f.input :email, placeholder: "adresse mail", label: 'none' %></p>
+        </div>
+        <div class="form-line-5">
+        <p><span>ou encore m'appeler au</span><%= f.input :phone, placeholder: "numéro de téléphone", label: 'none' %></p>
+        </div>
+        <%= f.button :submit, 'Envoyer' %>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>
+
+<div class="padded"></div>
+
+<% content_for(:after_js) do %>
+<script type="text/javascript">
+    $(document).ready(function () {
+    $('.logo-white').toggleClass('hidden');
+    $('.logo-black').toggleClass('hidden');
+    $('#burger-navbar').toggleClass('blacked-burger');
+
+    });
+</script>
+<% end %>
