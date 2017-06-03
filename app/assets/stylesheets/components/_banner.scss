@@ -6,7 +6,7 @@
   background-size: cover !important;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   flex-direction: column;
 }
 .banner h1 {
@@ -42,7 +42,8 @@
   font-size: 25px;
   border: 1px solid rgba(255, 255, 255, 0.35);
   padding: 10px;
-  border-radius: 50%;
+  border-radius: 0%;
+  cursor: pointer;
   width: 48px;
   top: 75%;
 }
