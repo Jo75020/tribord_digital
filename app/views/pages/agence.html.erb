@@ -36,9 +36,9 @@
 <div class="padded"></div>
 
 
-<div class="container our-agency">
+<div class="container our-agency-page">
   <div class="row">
-    <div class="col-md-12 text-center">
+    <div class="col-md-12">
     <h3><span>/</span>Notre méthode</h3>
     <div class="padded-little"></div>
     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa cum sociis natoque.</p>
@@ -57,9 +57,9 @@
 
 <div class="padded"></div>
 
-<div class="container our-agency">
+<div class="container our-agency-page">
   <div class="row">
-    <div class="col-md-12 text-center">
+    <div class="col-md-12">
     <h3><span>/</span>Notre philosophie</h3>
     <div class="padded-little"></div>
     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa cum sociis natoque.</p>
@@ -87,11 +87,114 @@
     <div class="col-md-1 left-word-inclined">
     <h3><span>/</span>La vie à bord</h3>
     </div>
-  <div class="centred-button">
+  </div>
+</div>
+
+<div class="padded-little"></div>
+
+<div class="centred-button">
     <%= link_to "https://www.instagram.com/tribord_digital/" do %>
       <i class="fa fa-instagram" style="font-size: 32px;"></i>
     <% end %>
-  </div>
+</div>
+
+<div class="padded"></div>
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12 text-center techno-title">
+      <h3>Technologies utilisées</h3>
+    </div>
+    <div class="padded"></div>
+    <div class="col-md-12 techno-wrapper">
+      <div class="col-md-2">
+        <div class="img-techno">
+          <%= image_tag "HTML5.png" %>
+        </div>
+      </div>
+      <div class="col-md-2">
+        <div class="img-techno">
+          <%= image_tag "css3.png" %>
+        </div>
+      </div>
+      <div class="col-md-2">
+        <div class="img-techno">
+          <%= image_tag "invision.png" %>
+        </div>
+      </div>
+      <div class="col-md-2">
+        <div class="img-techno">
+          <%= image_tag "wordpress.png" %>
+        </div>
+      </div>
+      <div class="col-md-2">
+        <div class="img-techno">
+          <%= image_tag "rails.png" %>
+        </div>
+      </div>
+      <div class="col-md-2">
+        <div class="img-techno">
+          <%= image_tag "grunt.png" %>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-12 techno-wrapper-b">
+      <div class="col-md-3">
+        <div class="img-techno">
+          <%= image_tag "amazon.png" %>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="img-techno">
+          <%= image_tag "mysql.png" %>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="img-techno">
+          <%= image_tag "balsamiq.png" %>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="img-techno">
+          <%= image_tag "Autodesk.svg" %>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
+
+<div class="padded"></div>
+
+<div class="container">
+  <div class="row flexed">
+    <div class="col-md-5 card-agence-bot menu-img-1">
+    <div style="padding-top: 10em;"></div>
+    <p>Works</p>
+    </div>
+    <div class="col-md-5 card-agence-bot menu-img-2">
+    <div style="padding-top: 10em;"></div>
+    <p>Journal</p>
+    </div>
+  </div>
+</div>
+
+<div class="padded"></div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 col-md-4 col-md-offset-4 newsletter-wrapper">
+    <h3>Inscrivez-vous à notre newsletter</h3>
+    <div class="padded-little"></div>
+    <div class="newsletter-f">
+      <%= simple_form_for @info do |f| %>
+        <%= f.input :email, placeholder: 'john@doe.com', label: 'none' %>
+        <%= f.button :submit, 'Envoyer' %>
+      <% end %>
+    </div>
+    </div>
+  </div>
+</div>
+
+
 <div class="padded"></div>

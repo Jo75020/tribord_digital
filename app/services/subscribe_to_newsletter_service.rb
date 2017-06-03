@@ -6,6 +6,7 @@ class SubscribeToNewsletterService
   end
 
   def call
+    unless @info.email == ""
     @gibbon.lists(@list_id).members.create(
       body: {
         email_address: @info.email,
@@ -16,5 +17,6 @@ class SubscribeToNewsletterService
         # }
       }
     )
+  end
   end
 end

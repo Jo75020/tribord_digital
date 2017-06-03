@@ -3,7 +3,7 @@ class InfosController < ApplicationController
   def create
     @info = Info.new(info_params)
     @info.save
-    redirect_to root_path
+    redirect_to :back
   end
 
 

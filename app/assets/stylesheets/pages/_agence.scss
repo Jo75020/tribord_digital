@@ -69,12 +69,91 @@ background-image: url("donne.jpg");
 
 .our-insta h3 {
   font-weight: bolder;
-  width: 100vh;
-  font-size: 70px;
+  width: 100vw;
+  font-size: 46px;
   text-transform: uppercase;
-  margin-left: -30px;
+  margin-left: -15px;
 }
 
 .our-insta span {
   color: #ee6b5b;
+}
+
+.techno-wrapper-b {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 25px;
+}
+
+.techno-wrapper-b img {
+  width: 45%;
+}
+.img-techno {
+  text-align: center;
+}
+
+.techno-title h3 {
+  font-weight: bolder;
+  font-size: 36px;
+  text-transform: uppercase;
+}
+
+.techno-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.techno-wrapper img {
+  height: 100px;
+}
+
+.our-agency-page span {
+  color: #ee6b5b;
+}
+
+.our-agency-page h3 {
+  font-weight: bolder;
+  font-size: 36px;
+  text-transform: uppercase;
+}
+
+.our-agency-page p {
+  font-size: 23px;
+  color: rgba(119, 119, 119, 0.85);
+  font-weight: 500;
+  line-height: 1.3em;
+  margin-top: 20px;
+}
+
+.menu-img-1  {
+  background-image: url("Works.jpg");
+  background-size: cover !important;
+}
+
+.menu-img-2 {
+  background-image: url("Journal.jpg");
+  background-size: cover !important;
+}
+
+.card-agence-bot {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  font-size: 36px;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.card-agence-bot p {
+    text-align: right;
+    padding: 5px;
+    width: 100%;
+}
+
+.flexed {
+  display: flex;
+  justify-content: space-around;
 }
