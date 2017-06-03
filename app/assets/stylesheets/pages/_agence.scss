@@ -60,4 +60,21 @@ background-image: url("donne.jpg");
 
 .instagram-pic img {
   width: 100%;
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+}
+
+.our-insta h3 {
+  font-weight: bolder;
+  width: 100vh;
+  font-size: 70px;
+  text-transform: uppercase;
+  margin-left: -30px;
+}
+
+.our-insta span {
+  color: #ee6b5b;
 }

@@ -26,7 +26,7 @@
       <div class="col-md-4">
         <div class="card card-agence third-image">
           <p>Web Marketing</p>
-          <div class="padded"></div>
+          <div class="padded"   id="logo-change"></div>
         </div>
       </div>
     </div>
@@ -73,22 +73,25 @@
 <div class="padded"></div>
 
 
-<div class="container">
+<div class="container our-insta">
   <div class="row">
+  <div class="col-md-11">
   <% @data.each_with_index do |a, i| %>
   <% break if i == 6 %>
     <div class="col-md-4 text-center instagram-pic">
     <% image = a["images"]["standard_resolution"]["url"] %>
     <%= image_tag image %>
     </div>
+  <% end %>
+  </div>
+    <div class="col-md-1 left-word-inclined">
+    <h3><span>/</span>La vie à bord</h3>
+    </div>
+  <div class="centred-button">
+    <%= link_to "https://www.instagram.com/tribord_digital/" do %>
+      <i class="fa fa-instagram" style="font-size: 32px;"></i>
     <% end %>
   </div>
+  </div>
 </div>
-<div class="padded-little"></div>
-    <div class="centred-button">
-    <%= link_to "https://www.instagram.com/tribord_digital/" do %>
-        <i class="fa fa-instagram" style="font-size: 32px;"></i>
-    <% end %>
-    </div>
-
 <div class="padded"></div>
