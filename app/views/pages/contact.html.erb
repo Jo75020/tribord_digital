@@ -4,22 +4,24 @@
     <div class="col-md-12 contact-form">
         <%= simple_form_for @info do |f| %>
         <div class="form-line">
-        <div class="form-line-1">
+        <div class="form-line-1 formed">
         <p><span>Je suis</span><%= f.input :first_name, placeholder: 'prénom', label: 'none'%></p>
         </div>
-        <div class="form-line-2">
+        <div class="form-line-2 formed">
         <p><span>Je voudrais discuter d'un</span><%= f.input :project, placeholder: 'projet', label: 'none' %></p>
         </div>
-        <div class="form-line-3">
+        <div class="form-line-3 formed">
         <p><span>pour l'entreprise</span><%= f.input :entreprise, placeholder: "nom de l'entreprise", label: 'none' %></p>
         </div>
-        <div class="form-line-4">
+        <div class="form-line-4 formed">
         <p><span>Vous pouvez me joindre sur le mail</span><%= f.input :email, placeholder: "adresse mail", label: 'none' %></p>
         </div>
-        <div class="form-line-5">
-        <p><span>ou encore m'appeler au</span><%= f.input :phone, placeholder: "numéro de téléphone", label: 'none' %></p>
+        <div class="form-line-5 formed" style="justify-content: flex-start;">
+        <p><span>ou vous pouvez me rappeler au</span><%= f.input :phone, placeholder: "numéro de téléphone", label: 'none' %></p>
         </div>
-        <%= f.button :submit, 'Envoyer' %>
+        <div class="submit-button">
+        <%= f.button :submit, 'Envoyer', class:"more-button-2" %>
+        </div>
         </div>
       <% end %>
     </div>
@@ -33,15 +35,15 @@
   <div class="row">
     <div class="col-md-12 text-center">
     <div class="contact-case">
-      <p>TELEPHONE</p>
+      <h3>TELEPHONE</h3>
       <p>06.36.34.61.39</p>
     </div>
     <div class="contact-case">
-      <p>MAIL</p>
+      <h3>MAIL</h3>
       <p>contact@triborddigital.com</p>
     </div>
     <div class="contact-case">
-      <p>ADRESSE</p>
+      <h3>ADRESSE</h3>
       <p>26 boulevard de la république</p>
       <p>92100 Boulogne Billancourt</p>
     </div>
