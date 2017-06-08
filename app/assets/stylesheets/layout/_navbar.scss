@@ -130,6 +130,23 @@
   z-index: 99;
 }
 
+
+.inside-b {
+  font-size: 28px;
+     -webkit-transition: .5s,height .7s ease-in-out;
+    transition: .5s,height .7s ease-in-out;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+}
+
+.inside-b:hover{
+  font-size: 34px;
+   -webkit-transition: .5s,height .7s ease-in-out;
+    transition: .5s,height .7s ease-in-out;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+}
+
 .blacked-burger {
   color: black;
    -webkit-transition: .5s,height .7s ease-in-out;
