@@ -4,3 +4,4 @@
 //= require cable.js
 //= require home.js
 //= require navbar.js
+//= require works.js
