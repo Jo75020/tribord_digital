@@ -1,5 +1,5 @@
 class PagesController < ApplicationController
-  skip_before_action :authenticate_user!, only: [ :home, :agence, :works ]
+  skip_before_action :authenticate_user!, only: [ :home, :agence, :works, :contact ]
 
   def home
     @articles = Article.all

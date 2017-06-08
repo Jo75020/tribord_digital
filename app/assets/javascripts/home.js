@@ -12,6 +12,7 @@ $(document).ready(function() {
     $(window).scroll(function() {
         if($(window).scrollTop() > topOfOthDiv) { //scrolled past the other div?
             $('#burger-navbar').addClass('blacked-burger');
+            $('#burger-navbar').removeClass('blacked-burger-2');
         }
     });
 
@@ -19,6 +20,24 @@ $(document).ready(function() {
     $(window).scroll(function() {
         if($(window).scrollTop() < topOfOthDiv) { //scrolled past the other div?
         $('#burger-navbar').removeClass('blacked-burger');
+        $('#burger-navbar').removeClass('blacked-burger-2');
+        }
+    });
+
+    $('#newId').removeClass('blacked-burger');
+    var topOfOthDiv = $("#logo-change").offset().top;
+    $(window).scroll(function() {
+        if($(window).scrollTop() > topOfOthDiv) { //scrolled past the other div?
+            $('#newId').addClass('blacked-burger');
+            $('#newId').removeClass('blacked-burger-2');
+        }
+    });
+
+    var topOfOthDiv = $("#logo-change").offset().top;
+    $(window).scroll(function() {
+        if($(window).scrollTop() < topOfOthDiv) { //scrolled past the other div?
+        $('#newId').removeClass('blacked-burger');
+        $('#newId').removeClass('blacked-burger-2');
         }
     });
 });

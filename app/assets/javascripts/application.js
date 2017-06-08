@@ -3,3 +3,4 @@
 //= require bootstrap-sprockets
 //= require cable.js
 //= require home.js
+//= require navbar.js

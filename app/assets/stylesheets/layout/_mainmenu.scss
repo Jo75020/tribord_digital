@@ -1,0 +1,75 @@
+.mainMenu {
+  position: fixed;
+  top: -5%;
+  z-index: -1;
+  width: 100%;
+  height: 1px;
+  opacity: 0;
+  -webkit-transition: .5s,height .5s ease-in-out;
+  transition: .5s,height .5s ease-in-out;
+  -webkit-transform: translate3d(0,-100%,0);
+  transform: translate3d(0,-100%,0);
+  overflow: scroll;
+  background: linear-gradient(90deg,#9d58ff,#5a35ed);
+}
+
+
+.mainMenu--active {
+    top: 0;
+    z-index: 600;
+    opacity: 1;
+    height: 100%;
+    max-height: 100%;
+    -webkit-transition: .5s,height .7s ease-in-out;
+    transition: .5s,height .7s ease-in-out;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    background: linear-gradient(90deg,#9d58ff,#5a35ed);
+}
+
+.mainMenu__group {
+  padding: 12em 0;
+  width: 80%;
+  margin: 0 auto;
+  max-width: 67.182em;
+}
+
+.menu-list-li {
+  list-style: none;
+}
+
+#hidded-part-of-navbar p {
+  color: white;
+}
+
+.menu-list-li li a {
+  font-size: 3em;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #fff;
+  -webkit-transition: .25s ease-in-out;
+  transition: .25s ease-in-out;
+  display: block;
+  font-size: 4.8em;
+  line-height: 110px;
+  font-family: "Levibrush";
+  letter-spacing: 0.2em;
+}
+
+.navbar-text-right {
+  text-align: left;
+  color: white;
+  font-size: .909em;
+  line-height: 30px;
+}
+
+.menu-info-company {
+  margin-bottom: 2em;
+}
+
+.market-i {
+  display: flex;
+  justify-content: space-between;
+  width: 30%;
+  font-size: 24px;
+}

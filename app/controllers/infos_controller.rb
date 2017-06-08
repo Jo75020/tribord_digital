@@ -10,7 +10,7 @@ class InfosController < ApplicationController
   private
 
   def info_params
-    params.require(:info).permit(:email)
+    params.require(:info).permit(:email, :phone, :first_name, :entreprise, :project)
   end
 
 end
