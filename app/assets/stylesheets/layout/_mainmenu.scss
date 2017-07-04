@@ -10,7 +10,7 @@
   -webkit-transform: translate3d(0,-100%,0);
   transform: translate3d(0,-100%,0);
   overflow: scroll;
-  background: linear-gradient(90deg,#9d58ff,#5a35ed);
+  background: linear-gradient(45deg, #30384C 54%, rgba(110, 144, 246, 0.76) 100%) !important;
 }
 
 
@@ -24,7 +24,7 @@
     transition: .5s,height .7s ease-in-out;
     -webkit-transform: translateZ(0);
     transform: translateZ(0);
-    background: linear-gradient(45deg,#33b1f8 37%,#6e90f6 100%) !important;
+    background: linear-gradient(45deg, #30384C 54%, rgba(110, 144, 246, 0.76) 100%) !important;
 }
 
 .mainMenu__group {

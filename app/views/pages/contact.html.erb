@@ -20,7 +20,7 @@
         <p><span>ou vous pouvez me rappeler au</span><%= f.input :phone, placeholder: "numéro de téléphone", label: 'none' %></p>
         </div>
         <div class="submit-button">
-        <%= f.button :submit, 'Envoyer', class:"more-button-2" %>
+        <%= f.button :submit, 'Envoyer', class:"more-button-2", id:"that" %>
         </div>
         </div>
       <% end %>
@@ -77,6 +77,8 @@
 <script type="text/javascript">
     $(document).ready(function () {
     $('.logo-white').toggleClass('hidden');
+    $('#that').removeClass('btn');
+    $('#that').removeClass('btn-default');
     $('.logo-black').toggleClass('hidden');
     $('#burger-navbar').toggleClass('blacked-burger');
 
